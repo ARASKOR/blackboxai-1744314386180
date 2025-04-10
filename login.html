@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mingle2 Dating Site</title>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpUUqDnYQcchQnSyIijhKFYtgobQVWnUweekfNGlIUlwcBdeCgz+LVQcXZ10dXAVB8AfE0clJ0UVKvC8ptIjxwuN9nHfP4b37AKFWYprVNgZoum2mEnExk10RQ68IIoQ+9GJQZpYxK0lJ8K2ve+qmuovyLO++P6tHzVkM8InEs8wwbeIN4ulN2+C8TxxmBVklPiceM+mCxI9cV5r8xjnvsMAzw0YqNU8cJhbzLay0MCuYGvEUcUTVdMoXMh6rnLc4a6UKa9yTvzCY01aWuU5zEHEsYgkSRCioYAMlWIjRrpNiIUXncR//oOuXyKXQawOMHPMoQ4Ps+sH/4He3Vn5i3E0KxYHOF9v+GAaCu0Cjatt9HQda54D+J1zZxL5kXWrw6hLvjGQ/6QIGb4G+WdfXxgbwLIFV1/n+HnB6C/RL7t0dZax/kqdGAF6P4xugb8kNUL3n1N7a5+l9j3MfpyehdFt+AIQ2gvPUc7rDAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wQKEzYxnNE3UAAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAJmSURBVFjD7Ze/axRBFMe/M7t3l7vL5X6YkIgasKCFIAqiYKWNjQr+A4KVpaV/hXYWgqAoWAgWFhJBsLGxsQgEG0XxByRqjEZz0Xt3u7tv34yF2WSTvUs0kQS87wemmt3vZ+bNvDdLzIyVbBQrHKseYEkBhBD/3RFRvQKICMQM5xy01mBmOOegtS5fl2HmnBVCQGstpZSQUoKI4JyD1hrMDGstmBnWWjjnoLUuhTAzrLUgIhhjkOc5jDEQQoCI4JyDtRZEBGstmBlEBGstyrwQEYwxUEqV+xIRnHNwzsEYg8FggMFgACklAEBrXYIQEYwxSNMUWZYhyzIopaCUQpZlKIoCxhgwM4gIQggQEZgZzAwpJYQQEEKAmWGMQZ7nKIoCWZYhz3MYY8qQWGshhIDWGsYYpGmKNE2RpimyLEOe58jzHHmeI89zFEWBPM+RZRmKokCaprDWlgBEBK01kiRBkiTI8xxZliHLMiilUBQFiqJAURQwxsA5VwIwM5RSiKIIcRwjjmPEcYwkSZCmKfI8hzGmDEOWZUiSBFmWIU1TWGtLgDzPEUURoihCFEWI4xhJkiBJEiilYK0t42+MQVEUyLIMaZoiSRJYa0uAOI4RxzGiKEIURYjjGHEcI0kSKKXKhFJKIU1TpGmKJEmglCoB4jhGHMeIoghRFCGOY8RxjCRJoJQqQ6CUQpIkSJIEaZqWAHEcI45jRFGEKIoQRRHiOEYcx0iSBEqpMv5KKaRpWgIwM6IoQhRFiKIIURQhiiLEcYw4jpEkCZRSZQiUUkjTFGmaQilVAkRRhCiKEEURoihCFEWI4xhxHCNJEiilyhAopZAkCZIkgVLqzwB1+6+/4lcPsOoBfgK/Beg2kG5QSAAAAABJRU5ErkJggg==">
+</head>
+<body class="desktop-web">
+    <div id="header_container">
+        <div id="header" class="large-header">
+            <div id="logo" itemprop="logo">
+                <a href="index.html" aria-label='Mingle2'>
+                    <i class="fas fa-heart text-red-600 mr-2"></i>
+                    <span>Mingle2</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bodywrapper">
+        <div id="main_container">
+            <div id="main">
+                <h1 class="black framed">Login to Your Account</h1>
+                <div class="framed">
+                    <form action="#" method="post" class="login-form space-y-6">
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">
+                                <i class="fas fa-envelope text-gray-400 mr-2"></i>Email Address
+                            </label>
+                            <input type="email" id="email" name="email" required 
+                                   class="textfield" 
+                                   placeholder="Enter your email"
+                                   autocomplete="email">
+                        </div>
+
+                        <div>
+                            <label for="password" class="block text-gray-700 font-medium mb-2">
+                                <i class="fas fa-lock text-gray-400 mr-2"></i>Password
+                            </label>
+                            <input type="password" id="password" name="password" required 
+                                   class="textfield" 
+                                   placeholder="Enter your password"
+                                   autocomplete="current-password">
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="remember" class="mr-2">
+                                <span class="text-sm text-gray-600">Remember me</span>
+                            </label>
+                            <a href="#" class="text-red-600 hover:text-red-800 text-sm">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="red_submit_button w-full flex items-center justify-center">
+                            <i class="fas fa-sign-in-alt mr-2"></i>Login
+                        </button>
+
+                        <div class="mt-4 text-center">
+                            <p class="text-gray-600">Don't have an account? 
+                                <a href="register.html" class="text-red-600 hover:text-red-800">Sign up</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="linkbar">
+            <a href="#">Browse by Country</a> -
+            <a href="#">Mingle<sup>2</sup> Blog</a> -
+            <a href="#">Privacy Policy</a> -
+            <a href="#">Cookie Privacy</a> -
+            <a href="#">Code of Conduct</a> -
+            <a href="#">Terms of Use</a>
+            <br>
+            <a href="#">Safety Hub</a> -
+            <a href="#">Advertise</a> -
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="copyright">Copyright &copy; 2006-2025 NextC LLC. All rights reserved.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
